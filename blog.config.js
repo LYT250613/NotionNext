@@ -16,8 +16,8 @@ const BLOG = {
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '青梧新论', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || 'RCCSE中国核心学术期刊', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'http://qwxl.ac.cn/', // 网站地址
-  KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || '青梧新论,文学期刊,官方网站', // 网站关键词 英文逗号隔开
+  LINK: process.env.NEXT_PUBLIC_LINK || 'http://qwxl.ac.cn', // 网站地址
+  KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || '青梧新论,文学期刊,官方网站,诗刊,扶摇诗刊', // 网站关键词 英文逗号隔开
   BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon 配置, 默认使用 /public/favicon.ico，支持在线图片，如 https://img.imesong.com/favicon.png
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || 'ISSN 3079-983X', // 备案号 闽ICP备XXXXXX
   BEI_AN_LINK: process.env.NEXT_PUBLIC_BEI_AN_LINK || 'http://qwxl.ac.cn', // 备案查询链接，如果用了萌备等备案请在这里填写
