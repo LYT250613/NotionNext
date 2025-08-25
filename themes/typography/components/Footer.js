@@ -18,6 +18,14 @@ export default function Footer(props) {
     <footer className="w-full relative">
       <DarkModeButton className='pt-4' />
       
+      {/* 版权信息 - 放在顶部 */}
+      <div className='font-bold text-[var(--primary-color)] dark:text-white py-3 text-sm flex flex-col gap-1 items-center'>
+        <div>
+          &copy;{`${copyrightDate}`} {siteConfig('AUTHOR')}.
+        </div>
+        <div>All rights reserved.</div>
+      </div>
+      
       {/* 双链接组合 - 十年之约 + 备案信息 */}
       <div className="flex flex-col items-center space-y-2 my-3">
         {/* 十年之约 */}
@@ -50,18 +58,10 @@ export default function Footer(props) {
             src="https://icp.ekucat.com/images/icologo.png" 
             alt="备案图标" 
             className="object-contain"
-            style={{ height: '20px', marginBottom: '0px' }} 
+            style={{ height: '20px' }} 
           />
           <span className="align-middle">KUCAT盟2025086207号</span>
         </a>
-      </div>
-      
-      {/* 版权信息 */}
-      <div className='font-bold text-[var(--primary-color)] dark:text-white py-3 text-sm flex flex-col gap-1 items-center'>
-        <div>
-          &copy;{`${copyrightDate}`} {siteConfig('AUTHOR')}.
-        </div>
-        <div>All rights reserved.</div>
       </div>
     </footer>
   )
