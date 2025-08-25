@@ -27,8 +27,8 @@ export default function Footer(props) {
     <footer className="w-full">
       <DarkModeButton className='pt-4' />
       
-      {/* 青梧新论十年之约链接 - 进一步调整图片大小 */}
-      <div className="flex justify-center my-2">
+      {/* 优化后的十年之约图片 - 自适应方案 */}
+      <div className="fixed bottom-4 right-4 z-50">
         <a 
           href="https://www.snzy.cn/website/2025081312000063.html" 
           title="青梧新论的十年之约" 
@@ -37,9 +37,10 @@ export default function Footer(props) {
           className="transition-transform hover:scale-105 inline-flex opacity-80 hover:opacity-100"
         >
           <img 
-            className="h-5 w-auto" 
+            className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-contain" 
             src="https://www.snzy.cn/images/snzylogo.png" 
             alt="青梧新论十年之约"
+            style={{ maxWidth: '100%', height: 'auto' }}
           />
         </a>
       </div>
