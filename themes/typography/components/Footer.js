@@ -7,15 +7,6 @@ import { siteConfig } from '@/lib/config'
  * @param {*} props
  * @returns
  */
-import { BeiAnGongAn } from '@/components/BeiAnGongAn'
-import DarkModeButton from '@/components/DarkModeButton'
-import { siteConfig } from '@/lib/config'
-
-/**
- * 页脚组件
- * @param {*} props
- * @returns
- */
 export default function Footer(props) {
   const d = new Date()
   const currentYear = d.getFullYear()
@@ -24,23 +15,23 @@ export default function Footer(props) {
     parseInt(since) < currentYear ? since + '-' + currentYear : currentYear
 
   return (
-    <footer className="w-full">
+    <footer className="w-full relative">
       <DarkModeButton className='pt-4' />
       
-      {/* 优化后的十年之约图片 - 自适应方案 */}
-      <div className="fixed bottom-4 right-4 z-50">
+      {/* 十年之约图片 - 自适应优化版 */}
+      <div className="flex justify-center my-4">
         <a 
           href="https://www.snzy.cn/website/2025081312000063.html" 
           title="青梧新论的十年之约" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="transition-transform hover:scale-105 inline-flex opacity-80 hover:opacity-100"
+          className="inline-block transition-all duration-300 hover:scale-105 opacity-90 hover:opacity-100 max-w-[120px] w-full"
         >
           <img 
-            className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-contain" 
+            className="w-full h-auto object-contain" 
             src="https://www.snzy.cn/images/snzylogo.png" 
             alt="青梧新论十年之约"
-            style={{ maxWidth: '100%', height: 'auto' }}
+            style={{ maxHeight: '40px' }}  // 保持合适高度比例
           />
         </a>
       </div>
