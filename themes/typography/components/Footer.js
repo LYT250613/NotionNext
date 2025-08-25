@@ -22,8 +22,18 @@ export default function Footer(props) {
         <div>
           &copy;{`${copyrightDate}`} {siteConfig('AUTHOR')}.
         </div>
-        <div> <a href="https://www.snzy.cn/website/2025081312000063.html" title="青梧新论的十年之约" target="_blank"><img style="width:100px;height:36px;" src="https://www.snzy.cn/images/snzylogo.png"></a></div>
         <div>All rights reserved.</div>
+      </div>
+      
+      {/* 固定在右下角的十年之约标识 */}
+      <div className="fixed-footer">
+        <div className="footer-content">
+          <div className="ten-year-badge">
+            <a href="https://www.snzy.cn/website/2025081312000063.html" title="青梧新论的十年之约" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.snzy.cn/images/snzylogo.png" alt="十年之约标识" />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   )
