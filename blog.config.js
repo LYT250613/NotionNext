@@ -19,7 +19,7 @@ const BLOG = {
   LINK: process.env.NEXT_PUBLIC_LINK || 'http://www.qwxl.ac.cn', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || '青梧新论,文学期刊,官方网站,诗刊,扶摇诗刊', // 网站关键词 英文逗号隔开
   BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon 配置, 默认使用 /public/favicon.ico，支持在线图片，如 https://img.imesong.com/favicon.png
-  BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || 'ISSN 3079-983X', // 备案号 闽ICP备XXXXXX
+  BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '<a href="https://www.snzy.cn/website/2025081312000063.html" title="青梧新论的十年之约" target="_blank"><img style="width:100px;height:36px;" src="https://www.snzy.cn/images/snzylogo.png"></a>', // 备案号 闽ICP备XXXXXXX
   BEI_AN_LINK: process.env.NEXT_PUBLIC_BEI_AN_LINK || 'https://www.qwxl.ac.cn', // 备案查询链接，如果用了萌备等备案请在这里填写
 
   // RSS订阅
