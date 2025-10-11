@@ -128,6 +128,12 @@ const SEO = props => {
           content={SEO_BAIDU_SITE_VERIFICATION}
         />
       )}
+     {SEO_BING_SITE_VERIFICATION && (
+        <meta
+          name='bing-site-verification'
+          content={SEO_BING_SITE_VERIFICATION}
+        />
+      )}
 
       {/* 基础SEO元数据 */}
       <meta name='keywords' content={keywords} />
