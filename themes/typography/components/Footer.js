@@ -22,6 +22,7 @@ export default function Footer(props) {
         <div>
           &copy;{`${copyrightDate}`} {siteConfig('AUTHOR')}.
         </div>
+         <div>ISSN 3079-983X</div>
         <div>All rights reserved.</div>
       </div>
     </footer>
