@@ -22,7 +22,8 @@ export default function Footer(props) {
         <div>
           &copy;{`${copyrightDate}`} {siteConfig('AUTHOR')}.
         </div>
-         <div>ISSN 3079-983X</div>
+         <div>国际标准刊号(ISSN) 3079-983X</div>
+          <div>微信公众号：青梧新论</div>
         <div>All rights reserved.</div>
       </div>
     </footer>
